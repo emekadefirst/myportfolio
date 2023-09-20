@@ -26,8 +26,6 @@ def info(request, model_name, pk):
         model = get_object_or_404(Certificate, id=pk)
 
     context = {'model': model}
-    return render(request, 'portfolio-details.html', context)
+    return render(request, 'info.html', context)
 
 
-def details(request):
-    return render(request, 'portfolio-details.html')
